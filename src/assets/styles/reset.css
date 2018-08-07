@@ -23,3 +23,16 @@ html {overflow-x: hidden;height: 100%;font-size: 50px;-webkit-tap-highlight-colo
 body {background: rgb(246,246,246);font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;color: #333;font-size: .28em;line-height: 1;-webkit-text-size-adjust: none;}
 hr {height: .02rem;margin: .1rem 0;border: medium none;border-top: .02rem solid #cacaca;}
 a {color: rgb(143,143,143);text-decoration: none;}
+/*清浮动*/
+.clearfix:after{content:"";display:block; clear:both;}
+.clearfix{zoom:1;}
+
+.navShow{
+  border: 1px solid rgb(224,224,224);
+  display: none;
+  position: absolute;
+  left: 0px; top: 29px;
+  box-shadow: 0 0 5px #ddd; background-color: #fff; }
+.topNav .hover{ position: relative; }
+.topNav .hover:hover a{border: 1px solid rgb(200,200,200); border-bottom: 1px solid #fff; position: relative;z-index: 100;background-color: #fff; }
+.topNav .hover:hover .navShow{ display: block; z-index: 40; }
